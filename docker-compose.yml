@@ -1,0 +1,8 @@
+services:
+  pipeline:
+    build: .
+    volumes:
+      - ./output:/app/output
+    # Demo mode by default - safe to run with no other setup, no real evidence involved.
+    # For live mode: command: ["--live", "--fs-root", "/app/<evidence>", "--output-dir", "/app/output"]
+    command: ["--demo", "--output-dir", "/app/output"]

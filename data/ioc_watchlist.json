@@ -1,0 +1,12 @@
+{
+  "_comment": "Synthetic IOC watchlist for demo/CI. Uses only reserved documentation ranges (RFC 5737 TEST-NET, RFC 2606 .test TLD) - none of these resolve to or represent real infrastructure. Describes a fictional incident scenario used consistently across all four evidence sources in the bundled fixtures.",
+  "iocs": [
+    { "ioc_type": "ip", "value": "203.0.113.42", "description": "Suspected C2 server (fictional, TEST-NET-3 range)", "severity": 8 },
+    { "ioc_type": "domain", "value": "update-check.example-c2.test", "description": "C2 beacon domain (fictional, .test TLD)", "severity": 8 },
+    { "ioc_type": "domain", "value": "telemetry.example-c2.test", "description": "C2 beacon domain (fictional, .test TLD)", "severity": 7 },
+    { "ioc_type": "filename", "value": "invoice.pdf.exe", "description": "Disguised dropper delivered via phishing (double extension)", "severity": 9 },
+    { "ioc_type": "filename", "value": "helper.dll", "description": "Dropped payload DLL, sideloaded for persistence", "severity": 7 },
+    { "ioc_type": "hash", "value": "aa11bb22cc33dd44ee55ff6600112233445566778899aabbccddeeff001122", "description": "Known-bad file hash (fictional)", "severity": 9 },
+    { "ioc_type": "process", "value": "synth_updater.exe", "description": "Masquerading process name used by the dropper", "severity": 6 }
+  ]
+}
