@@ -1,0 +1,15 @@
+{
+  "_comment": "Synthetic fixture mirroring the SHAPE of Volatility3's --output json output for pslist/netscan/malfind. Not from a real memory dump - a genuine memory image can't be hand-fabricated the way a PE file or PCAP can, since it must contain internally-consistent real kernel structures for volatility to parse. This fixture exists purely to exercise the parsing/correlation code in demo mode and unit tests.",
+  "pslist": [
+    { "PID": 3350, "PPID": 712, "ImageFileName": "explorer.exe", "CreateTime": "2026-03-14T08:30:00Z", "Cmdline": "C:\\Windows\\explorer.exe" },
+    { "PID": 5100, "PPID": 620, "ImageFileName": "svchost.exe", "CreateTime": "2026-03-14T08:31:00Z", "Cmdline": "C:\\Windows\\System32\\svchost.exe -k netsvcs" },
+    { "PID": 4810, "PPID": 3350, "ImageFileName": "invoice.pdf.exe", "CreateTime": "2026-03-14T09:00:08Z", "Cmdline": "\"C:\\Users\\vic\\Downloads\\invoice.pdf.exe\"" },
+    { "PID": 4821, "PPID": 4810, "ImageFileName": "synth_updater.exe", "CreateTime": "2026-03-14T09:00:15Z", "Cmdline": "C:\\Users\\vic\\AppData\\Local\\Temp\\synth_updater.exe" }
+  ],
+  "netscan": [
+    { "PID": 4821, "Owner": "synth_updater.exe", "LocalAddr": "10.0.0.15", "LocalPort": 51422, "ForeignAddr": "203.0.113.42", "ForeignPort": 443, "Proto": "TCP", "State": "ESTABLISHED" }
+  ],
+  "malfind": [
+    { "PID": 5100, "Process": "svchost.exe", "Address": "0x1e4f0000", "Protection": "PAGE_EXECUTE_READWRITE" }
+  ]
+}

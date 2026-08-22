@@ -1,0 +1,45 @@
+[
+  {
+    "_comment": "Synthetic fixture: normalized Windows Security/Sysmon event log export shape, hand-written to match the incident narrative shared across all fixtures. Not from a real system.",
+    "EventID": 4624,
+    "TimeCreated": "2026-03-14T08:29:00Z",
+    "Computer": "WORKSTATION07",
+    "User": "vic",
+    "CommandLine": ""
+  },
+  {
+    "EventID": 4688,
+    "TimeCreated": "2026-03-14T09:00:08Z",
+    "Computer": "WORKSTATION07",
+    "User": "vic",
+    "CommandLine": "C:\\Users\\vic\\Downloads\\invoice.pdf.exe"
+  },
+  {
+    "EventID": 11,
+    "TimeCreated": "2026-03-14T09:00:12Z",
+    "Computer": "WORKSTATION07",
+    "User": "vic",
+    "CommandLine": "C:\\Users\\vic\\AppData\\Local\\Temp\\helper.dll"
+  },
+  {
+    "EventID": 1,
+    "TimeCreated": "2026-03-14T09:00:15Z",
+    "Computer": "WORKSTATION07",
+    "User": "vic",
+    "CommandLine": "C:\\Users\\vic\\AppData\\Local\\Temp\\synth_updater.exe"
+  },
+  {
+    "EventID": 3,
+    "TimeCreated": "2026-03-14T09:00:30Z",
+    "Computer": "WORKSTATION07",
+    "User": "vic",
+    "CommandLine": "10.0.0.15 -> 203.0.113.42:443"
+  },
+  {
+    "EventID": 7045,
+    "TimeCreated": "2026-03-14T09:05:00Z",
+    "Computer": "WORKSTATION07",
+    "User": "SYSTEM",
+    "CommandLine": "SynthUpdaterSvc"
+  }
+]
